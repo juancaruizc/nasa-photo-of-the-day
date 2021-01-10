@@ -1,10 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Explanation = (props) => {
-  const { nasaData } = props;
+const StyledExplanation = styled.p`
+  width: 50%;
+`;
+const Explanation = ({ nasaData }) => {
   return (
     <div>
-      <p>{nasaData.explanation}</p>
+      <StyledExplanation>{nasaData.explanation}</StyledExplanation>
     </div>
   );
 };
